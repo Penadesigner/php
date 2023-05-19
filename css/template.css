@@ -35,6 +35,11 @@ header {margin-bottom: 17rem;}
 /* Serviços */
 .servicos{ background: #4c1b1b; padding: 25px 0; color: #fefefe; }
 
+/* Artigo */
+.imagem-artigo .wp-post-image{ float: none; }
+
+
+
 /* Meio */  
 .meio{ padding: 25px 0; }
 .meio h1{ color: #4c1b1b; text-transform: uppercase; margin-bottom:0.4em;}

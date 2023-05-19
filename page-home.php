@@ -16,18 +16,19 @@
 					</aside>
 					<div class="noticias col-md-9">
 						<div class="row">
+
 						<?php 
 						$tamanho = 'col-md-12';
                         $op_content = 'destaque';
 						$itens = get_categories(array('include' => '5,6'));
-						
+		
 						foreach($itens as $item):
 							$args = array(
 								'category__in' => $item->cat_ID,
 								'posts_per_page' => 3
 							);
 							$consulta = new WP_Query($args);
-
+							
 							// O loop WordPress (consulta padrão modificada)
 							if($consulta->have_posts()):
 								while($consulta->have_posts()):
@@ -35,7 +36,7 @@
 ?>
 								<div class="<?php echo $tamanho; ?>">
 									<?php get_template_part('content', $op_content); ?>
-								</div>								
+								</div>					
 
 							<?php
 								// Reiniciamos o valor das variáveis $tamanho e $op_content com novos valores

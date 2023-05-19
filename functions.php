@@ -23,15 +23,17 @@ register_nav_menus(
 // Adicionando suporte ao tema
 
 
-add_theme_support( 'custom-logo', array(
-	'height'               => 80,
-	'width'                => 160
-));
+add_theme_support( 'custom-logo', array('height'=> 80,'width'=> 160,'flex-width'  => true,'flex-height' => true,));
 add_theme_support('custom-background');
 add_theme_support('custom-header');
 add_theme_support('post-thumbnails');
 add_theme_support('post-formats', array('video', 'image', 'audio'));
-add_theme_support('html5', array('search-form'));
+add_theme_support('html5',array('navigation-widgets','search-form','gallery','caption','style','script',));
+add_theme_support( 'automatic-feed-links' );
+add_theme_support( 'title-tag' );
+add_theme_support( 'customize-selective-refresh-widgets' );
+
+remove_theme_support( 'widgets-block-editor' );
 
 // Registrando sidebars
 if (function_exists('register_sidebar')){

@@ -1,4 +1,7 @@
 <article class="noticia-destaque">
+	<div class="categoria-nome">
+		<a href="<?php the_permalink(); ?>"><?php the_category(); ?></a>
+	</div>
 	<div class="miniatura">
 	<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('large', array('class' => 'img-responsive')); ?></a>		
 	</div>
