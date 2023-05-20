@@ -28,6 +28,9 @@ header {margin-bottom: 17rem;}
 .menu-principal ul li a{ text-transform: uppercase; color: #4c1b1b;  text-decoration: none;}
 .menu-principal ul  li.current-menu-item a{ color:#e58888; }
 
+/* REDES SOCIAIS */
+.redes-sociais #rs {background-color: #000; color: white;}
+
 /* Slide */
 .slide{ padding: 25px 0; }
 #img-slide { max-height: 25em; object-fit: cover; object-position: 0px -150px;}
@@ -37,8 +40,6 @@ header {margin-bottom: 17rem;}
 
 /* Artigo */
 .imagem-artigo .wp-post-image{ float: none; }
-
-
 
 /* Meio */  
 .meio{ padding: 25px 0; }

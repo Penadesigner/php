@@ -12,10 +12,10 @@
 
 
 <header>
-	<div class="barra-topo">
+	<div id="barra-topo" class="barra-topo">
 		<div class="container">
 			<div class="row">
-				<div class="redes-sociais col-md-10">Redes Sociais</div>
+				<div class="redes-sociais col-md-10"><button id="rs">modo escuro</button></div>
 				<div class="pesquisa col-md-2 text-right">
 					<?php get_search_form(); ?>
 				</div>
@@ -24,7 +24,7 @@
 
 	</div>
 
-	<div class="area-menu">
+	<div id="area-menu" class="area-menu">
 		<div class="container">
 			<div class="row">
 				<div class="logo col-md-3"><?php 

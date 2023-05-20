@@ -23,7 +23,7 @@ register_nav_menus(
 // Adicionando suporte ao tema
 
 
-add_theme_support( 'custom-logo', array('height'=> 80,'width'=> 160,'flex-width'  => true,'flex-height' => true,));
+add_theme_support( 'custom-logo', array('height'=> 80,'width'=> 160,'flex-width'  => true,'flex-height' => true, 'unlink-homepage-logo' => true,));
 add_theme_support('custom-background');
 add_theme_support('custom-header');
 add_theme_support('post-thumbnails');
