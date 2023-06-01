@@ -3,11 +3,51 @@
 <div class="conteudo">
 	<main>
 		<section class="slide">
-			<div class="container">Slide</div>
+			<div class="container">SLIDE</div>
 		</section>
 		<section class="servicos">
 			<div class="container">Serviços</div>
+			<div class="row">
+				<!-- Serviço 1 -->
+				<div class="col-md-4 col-sm-4 col-xs-12 centraliza-horizontal">
+					<div class="servico_item">
+						<div class="servico_img">
+							<img src="<?php echo wp_get_attachment_url(get_theme_mod('set_servico1')) ?>" alt="">
+						</div>
+						<div class="servico-descricao">
+							<h2><?php echo get_theme_mod('set_servico1_title') ?></h2>
+							<p><?php echo get_theme_mod('set_servico1_descr') ?></p>
+						</div>
+					</div>
+				</div>
+				<!-- Serviço 2 -->
+				<div class="col-md-4 col-sm-4 col-xs-12 centraliza-horizontal">
+					<div class="servico_item">
+						<div class="servico_img">
+							<img src="<?php echo wp_get_attachment_url(get_theme_mod('set_servico2')) ?>" alt="">
+						</div>
+						<div class="servico-descricao">
+							<h2><?php echo get_theme_mod('set_servico2_title') ?></h2>
+							<p><?php echo get_theme_mod('set_servico2_descr') ?></p>
+						</div>
+					</div>
+				</div>
+				<!-- Serviço 3 -->
+				<div class="col-md-4 col-sm-4 col-xs-12 centraliza-horizontal">
+					<div class="servico_item">
+						<div class="servico_img">
+							<img src="<?php echo wp_get_attachment_url(get_theme_mod('set_servico3')) ?>" alt="">
+						</div>
+						<div class="servico-descricao">
+							<h2><?php echo get_theme_mod('set_servico3_title') ?></h2>
+							<p><?php echo get_theme_mod('set_servico3_descr') ?></p>
+						</div>
+					</div>
+				</div>
+			</div>
 		</section>
+
+
 		<section class="meio">
 			<div class="container">
 				<div class="row">

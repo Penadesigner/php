@@ -27,6 +27,7 @@ header {margin-bottom: 17rem;}
 .menu-principal ul li:last-child{ margin: 0; }
 .menu-principal ul li a{ text-transform: uppercase; color: #4c1b1b;  text-decoration: none;}
 .menu-principal ul  li.current-menu-item a{ color:#e58888; }
+.logo img { max-width: 160px; max-height: 80px;}
 
 /* REDES SOCIAIS */
 .redes-sociais #rs {background-color: #000; color: white;}
@@ -37,6 +38,8 @@ header {margin-bottom: 17rem;}
 
 /* Serviços */
 .servicos{ background: #4c1b1b; padding: 25px 0; color: #fefefe; }
+.servicos .centraliza-horizontal { display: flex; justify-content: center;}
+.servicos .centraliza-horizontal .servico_img { display: flex; justify-content: center;}
 
 /* Artigo */
 .imagem-artigo .wp-post-image{ float: none; }

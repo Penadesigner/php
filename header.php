@@ -27,10 +27,10 @@
 	<div id="area-menu" class="area-menu">
 		<div class="container">
 			<div class="row">
-				<div class="logo col-md-3"><?php 
+				<div class="logo col-md-2 col-sm-2 col-xs-12 text-center"><?php 
 				if ( function_exists( 'the_custom_logo' ) ) : the_custom_logo(); endif;?>
 				</div>
-				<div class="menu-principal col-md-9 text-right">
+				<div class="menu-principal col-md-10 col-sm-10 text-right">
 					<?php wp_nav_menu( array( 'theme_location' => 'meu_menu_principal') ); ?>
 				</div>
 			</div>
