@@ -1,4 +1,6 @@
 <?php 
+// Chama o arquivo customizer
+require get_template_directory().'/inc/customizer.php';
 
 // Função para carregamento dos scripts
 function carrega_scripts(){
@@ -21,8 +23,6 @@ register_nav_menus(
 );
 
 // Adicionando suporte ao tema
-
-
 add_theme_support( 'custom-logo', array('height'=> 80,'width'=> 160,'flex-width'  => true,'flex-height' => true, 'unlink-homepage-logo' => true,));
 add_theme_support('custom-background');
 add_theme_support('custom-header');
@@ -33,6 +33,7 @@ add_theme_support( 'automatic-feed-links' );
 add_theme_support( 'title-tag' );
 add_theme_support( 'customize-selective-refresh-widgets' );
 
+// Remove suporte ao tema
 remove_theme_support( 'widgets-block-editor' );
 
 // Registrando sidebars
@@ -61,7 +62,7 @@ if (function_exists('register_sidebar')){
 	);
 }
 
-
+// Registrando Banner
 function mostra_banner_random(){
 	$banners = array(
 		'<a href=""><img src="https://s2.glbimg.com/Qgl26Ze8x7iJ1HoFwwRkwfjgGrM=/smart/e.glbimg.com/og/ed/f/original/2020/11/05/brasil-tem-duas-praias-entre-as-cinco-melhores-do-mundo.jpg" alt=""></a>',
@@ -70,9 +71,9 @@ function mostra_banner_random(){
 	$rand = rand( 0, sizeof($banners) - 1);
 	echo '<div class="banner-rand">' . $banners[$rand] . '</div>';
 }
-
 add_action('banner_random','mostra_banner_random');
 
+// Limita o numero de itens no content
 function limitar_content($content)
 {
   return substr($content, 0, 200);
