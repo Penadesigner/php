@@ -1,24 +1,5 @@
 <?php
 function meuPersonalizador($wp_customize){
-    // -------- SEÇÃO COPY
-    $wp_customize->add_section( 'sec_copy', array(
-        'title' => 'Copyright',
-        'description' => 'Seção do rodape',
-    ));
-
-    $wp_customize->add_setting( 'set_copy', array(
-        'type' => 'theme_mod',
-        'default' => 'Copyright',
-    ));
-    $wp_customize->add_control( 'contr_copy', array(
-        'label' => 'Ajustar Copyright',
-        'type' => 'text',
-        'section' => 'sec_copy',
-        'settings' => 'set_copy',
-        'desciption' => 'Informe o copyright'
-    ));
-
-
     // -------- SEÇÃO SERVIÇOS
     $wp_customize->add_section( 'sec_servico', array(
         'title' => 'Serviços',
@@ -134,6 +115,65 @@ function meuPersonalizador($wp_customize){
         'settings' => 'set_servico3'
     )));
     
+    /* ------------------------------------------- */
+
+    // -------- SEÇÃO COPY
+    $wp_customize->add_section( 'sec_copy', array(
+        'title' => 'Copyright',
+        'description' => 'Seção do rodape',
+    ));
+
+    $wp_customize->add_setting( 'set_copy', array(
+        'type' => 'theme_mod',
+        'default' => 'Copyright',
+    ));
+    $wp_customize->add_control( 'contr_copy', array(
+        'label' => 'Ajustar Copyright',
+        'type' => 'text',
+        'section' => 'sec_copy',
+        'settings' => 'set_copy',
+        'desciption' => 'Informe o copyright'
+    ));
+
+    /* ------------------------------------------- */
+
+    // -------- SECAO TELEFONE
+    $wp_customize->add_section( 'sec_telefone', array(
+        'title' => 'Numero de Telefone',
+        'description' => 'Seção do rodape',
+    ));
+
+    $wp_customize->add_setting( 'set_telefone', array(
+        'type' => 'theme_mod',
+        'default' => '(00)',
+    ));
+    $wp_customize->add_control( 'contr_telefone', array(
+        'label' => 'Ajustar Telefone',
+        'type' => 'text',
+        'section' => 'sec_telefone',
+        'settings' => 'set_telefone',
+        'desciption' => 'Informe o numero de telefone'
+    ));
+
+        // -------- SECAO EMAIL
+        $wp_customize->add_section( 'sec_email', array(
+            'title' => 'E-mail para contato',
+            'description' => 'Seção do rodape',
+        ));
+    
+        $wp_customize->add_setting( 'set_email', array(
+            'type' => 'theme_mod',
+            'default' => '',
+        ));
+        $wp_customize->add_control( 'contr_email', array(
+            'label' => 'Ajustar Email',
+            'type' => 'text',
+            'section' => 'sec_email',
+            'settings' => 'set_email',
+            'desciption' => 'Informe o e-mail'
+        ));
+
+
 
 }
 add_action( 'customize_register', 'meuPersonalizador' );
